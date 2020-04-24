@@ -17,12 +17,14 @@
 
 原来的工作流程是这样的：
 1. **使用SSH登陆跳板机**，命令为
+
 ```bash
 <localhost>$ ssh <username_gateway>@<IP_Router> -p <Port_Router>
 ```
 其中`<localhost>`为本机的主机名（hostname），`<username_gateway>` 为用户在跳板机上的账号
 
 2. **在跳板机上用SSH登陆目标机**，命令为
+
 ```bash
 <Gateway>$ ssh <username_server_i>@<IP_Server_i> -p <Port_Server_i_SSH>
 ```
